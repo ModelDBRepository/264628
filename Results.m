@@ -72,19 +72,19 @@ Spikes3=Raster(V3,T3,Vth);
 subplot(2,2,1);plot(SpikesO(:,1),SpikesO(:,2),'.');
 xlabel('Time [ms]');ylabel('Neuron #');
 xlim([0,4000]);
-title('Persistent activity: no impairment')
+title({'Persistent activity:',' No impairment'})
 %
 subplot(2,2,2);plot(Spikes1(:,1),Spikes1(:,2),'.');
 xlabel('Time [ms]');ylabel('Neuron #');
-title('Scenario 1: random impairment')
+title({'Scenario 1:', 'Random impairment'})
 xlim([0,4000]);
 %
 subplot(2,2,3);plot(Spikes2(:,1),Spikes2(:,2),'.');
 xlabel('Time [ms]');ylabel('Neuron #');
-title('Scenario 2: outdegree based impairment')
+title({'Scenario 2:', 'Outdegree based impairment'})
 xlim([0,4000]);
 %
 subplot(2,2,4);plot(Spikes3(:,1),Spikes3(:,2),'.');
 xlabel('Time [ms]');ylabel('Neuron #');
-title('Scenario 3: Activity based impairment')
+title({'Scenario 3:', 'Activity based impairment'})
 xlim([0,4000]);
